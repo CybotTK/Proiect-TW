@@ -4,20 +4,21 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
-    color: #0c0c0c;
-    background-color: #ffffff;
+    color: #000000;
+    background-color: #d1cfcf;
     margin: 0;
     padding-top: 50px;
 }
 
 header {
-    color: aqua;
+    color: rgb(62, 196, 196);
     text-align: center;
     margin-top: 50px;
 }
 
 .responsive-menu{
-    display:inline-flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
@@ -29,16 +30,26 @@ header {
     z-index: 999;
 }
 
-.menu-items{
+.bigSize{
     display: none;
     list-style-type: none;
+}
+
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.menu-items{
     margin: 0;
     padding: 0;
 }
 
 .menu-items li a:hover{
     background-color: rgb(255, 162, 178);
-    color: blue;
+    color: blue !important;
 }
 
 .menu-items li{
@@ -48,7 +59,6 @@ header {
 
 .menu-items li>a{
     text-decoration: none;
-    color:white;
     display: block;
     padding: 5px;
 }
@@ -64,16 +74,16 @@ header {
     margin-bottom: 5px;
 }
 
-.menu-icon:hover .menu-items{
+.smallSize:hover .menu-items{
     display: block;
-}  
+}
 
-.menu-icon ul li:hover{
-    background-color: rgb(255, 162, 178);
+.smallSize .menu-items{
+    display: none;
 }
 
 .menu-icon ul li:hover{
-    color:blue;
+    background-color: rgb(255, 162, 178);
 }
 
 .about-section {
@@ -81,7 +91,7 @@ header {
 }
 
 .about-section h2 {
-    color: aqua;
+    color: rgb(62, 196, 196);
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -106,7 +116,7 @@ header {
       margin-left: 15px;
     }
 
-    .menu-icon{
+    .smallSize{
         display: none;
     }
 

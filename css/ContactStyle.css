@@ -26,11 +26,20 @@
     border: 1px solid #ccc;
 }
 
-button[type="send"] {
+.defaultStyle{
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgb(167, 48, 48);
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:cell;
+}
+
+.afterClickStyle{
+    background-color : #333;
+    color : #fff;
+    border : dotted;
+    border-radius : 10px;
+    padding : 10px 20px;
+    cursor : pointer;
 }
