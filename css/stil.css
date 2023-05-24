@@ -49,10 +49,9 @@
 
 .menu-icon ul li:hover{
     background-color: rgb(255, 162, 178);
-    margin-left: 0;
 }
 
-.menu-icon ul li a:hover{
+.menu-icon ul li:hover{
     color:blue;
 }
 
