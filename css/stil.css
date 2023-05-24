@@ -1,3 +1,20 @@
+body {
+    /* background-image: url(../images/background.jpg); */
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    margin: 0;
+    padding-top: 50px;
+}
+
+header {
+    color: aqua;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .responsive-menu{
     display:inline-flex;
     align-items: center;
@@ -8,6 +25,7 @@
     width: 100%;
     top:0px;
     left: 0px;
+    z-index: 999;
 }
 
 .menu-items{
@@ -30,6 +48,8 @@
 .menu-items li a{
     text-decoration: none;
     color:white;
+    display: block;
+    padding: 5px;
 }
 
 .menu-icon {
@@ -55,6 +75,22 @@
     color:blue;
 }
 
+.about-section {
+    padding: 20px;
+}
+
+.about-section h2 {
+    color: aqua;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    color: grey;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 @media only screen and (min-width: 768px) {
     .responsive-menu {
       flex-direction: row;
@@ -72,4 +108,13 @@
     .menu-icon{
         display: none;
     }
+
+    body{
+        background-size:contain;
+    }
+
+    header{
+        margin-top: 0;
+    }
 }
+

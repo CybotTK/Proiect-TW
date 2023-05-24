@@ -1,0 +1,36 @@
+.services-section {
+    padding: 20px;
+}
+
+.services-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 14px;
+}
