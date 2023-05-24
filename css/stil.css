@@ -1,7 +1,8 @@
 body {
-    /* background-image: url(../images/background.jpg); */
+    /* background-image: url(../images/cool-background.svg); */
     height: 100vh;
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     color: #0c0c0c;
     background-color: #ffffff;
@@ -45,7 +46,7 @@ header {
     border: solid white;
 }
 
-.menu-items li a{
+.menu-items li>a{
     text-decoration: none;
     color:white;
     display: block;
