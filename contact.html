@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/stil.css" />
     <link rel="stylesheet" type="text/css" href="css/ContactStyle.css" />
     <link rel="stylesheet" type="text/css" href="css/ServiceStyle.css" />
-    <script src="js/SendButtonStil.js"></script>
     <title>Proiect</title>
 </head>
 <body>
@@ -33,9 +32,9 @@
         </ul>
     </nav>
 
-    <section class="contact-section">
+    <div class="contact-section">
         <h2>Contact Us</h2>
-        <form>
+        <form id="contactForm">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -48,12 +47,22 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <button onclick="onClickEvent()" id="myBtn" type="send" class="defaultStyle">Send</button>
+            <button onclick="performActions()" id="myBtn" type="send" class="defaultStyle">Send</button>
         </form>
-    </section>
+
+        <br></br>
+
+        <button id="deleteButton" onclick="deleteForm()">Delete</button>
+
+        <div id="formInfo">
+        </div>
+    </div>
 
     <footer>
         <p>&copy; E site-ul meu fraere.</p>
     </footer>
+    
+    <script src="js/SendButton.js"></script>
+    <script src="js/DeleteButton.js"></script>
 </body>
 </html>
